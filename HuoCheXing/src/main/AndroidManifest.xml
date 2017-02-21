@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sshine.huochexing"
+    android:versionCode="24"
+    android:versionName="1.1.6" android:installLocation="auto">
+    <!-- 百度地图 添加屏幕及版本支持 -->
+	<!-- <supports-screens android:largeScreens="true"  
+            android:normalScreens="true"  
+            android:smallScreens="true"  
+            android:resizeable="true"  
+            android:anyDensity="true"/> -->
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="22" />
+    <!--使用网络功能所需权限  -->  
+	<uses-permission android:name="android.permission.INTERNET">
+	</uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />  
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />  
+	<!-- SDK离线地图和cache功能需要读写外部存储器 -->  
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  
+	<!-- 获取设置信息 -->  
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />  
+	<!-- 使用定位功能所需权限,demo已集成百度定位SDK,不使用定位功能可去掉以下6项 -->  
+  
+	<permission android:name="android.permission.BAIDU_LOCATION_SERVICE">  
+	</permission>  
+	<uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE">  
+	</uses-permission>  
+	<!--<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION">
+	</uses-permission>	-->
+	<uses-permission android:name="android.permission.ACCESS_GPS"/> 
+	<!-- 百度地图定位所用权限 -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<uses-permission android:name="android.permission.READ_LOGS" />	
+	
+	 <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    
+    <!-- for log. -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    
+    <!-- 迅飞语音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    
+    <!-- ShareSDK start -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+	<!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+	<!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+	<!--<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+	<!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+	<!--uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+	<!-- ShareSDK end -->
+    
+    <application
+        android:name=".utils.MyApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.huochexing">
+        <activity android:name="WelcomeAty"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="MainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="LoginAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name="RegisterActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".trainSchedule.TrainSchAty" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".trainSchedule.TrainSchListAty" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".trainSchedule.SelectAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".userInfo.A6UserInfoAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".userInfo.EmailNextActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".userInfo.UserInfoAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".userInfo.FindPwdActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".userInfo.EditTextAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".userInfo.EditImageAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".userInfo.ResetPwdAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".userInfo.ModifyPwdAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".chatroom.ChatRoomAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".trainInfos.AddInfoAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".trainInfos.TrainInfoAty" android:screenOrientation="portrait" android:launchMode="singleTask"></activity>
+        <activity android:name=".trainInfos.TrainDetailAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <!-- <activity android:name=".trainInfos.TrainLocationAty"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden">
+        </activity> -->
+        <activity android:name=".trainInfos.LateAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity android:name=".trainInfos.WeatherInfoAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".ticketInfo.TicketInfoAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity android:name=".more.MoreAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity android:name=".more.AboutAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity android:name=".more.ReminderSetupAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity android:name=".more.AntiTheftSetupAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity android:name=".more.ChatSetupAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity android:name=".more.LockPatternAty" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog" android:configChanges="orientation|keyboardHidden"></activity>
+		<activity android:name=".more.AuthPageAty" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog" android:configChanges="orientation|keyboardHidden"></activity>
+		<activity android:name=".HuoCheXingAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity android:name=".UserGuidAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".socialshare.ShareContentAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity android:name=".history.HistoryAty" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity
+		    android:name=".antiTheft.AntiTheftAty"
+		    android:screenOrientation="portrait"
+		    android:launchMode="singleTask">
+		</activity>
+		<activity android:name=".ticketOnline.A6LoginAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity android:name=".ticketOnline.ConfirmPassengerAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity android:name=".ticketOnline.PassengerMangAty"
+		    android:screenOrientation="portrait"
+		    android:launchMode="singleTask">
+		</activity>
+		<activity android:name=".ticketOnline.EditPassengerAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity android:name=".ticketOnline.A6OrderAty" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity android:name=".ticketOnline.OrderAty" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity android:name=".ticketOnline.EditMonitorAty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity android:name=".ticketOnline.MonitorMangAty" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+		<activity android:name=".ticketOnline.TicketOnlineAty"></activity>
+		<service android:name=".antiTheft.AntiTheftService"></service>
+		<service android:name="com.sshine.huochexing.utils.BgdService"></service>
+		<service android:name="com.sshine.huochexing.ticketOnline.BgdService2"></service>
+		<receiver android:name=".utils.MyBroadcastReceiver"
+		    android:enabled="true">
+		    <intent-filter >
+                <action android:name="com.sshine.huochexing.startService"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+		</receiver>
+		
+		<!-- ShareSDK start -->
+		<activity
+		  android:name="cn.sharesdk.framework.ShareSDKUIShell"
+		  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		  android:configChanges="keyboardHidden|orientation|screenSize"
+		  android:screenOrientation="portrait"
+		  android:windowSoftInputMode="stateHidden|adjustResize" >
+		   <intent-filter>
+		        <data android:scheme="tencent100551176" />
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.BROWSABLE" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		    </intent-filter>
+		</activity>
+		<!--微信分享回调 -->
+			<activity
+			  android:name=".wxapi.WXEntryActivity"
+			  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			  android:configChanges="keyboardHidden|orientation|screenSize"
+			  android:exported="true"
+			  android:screenOrientation="portrait" />
+			
+			<!--易信分享回调 -->
+			<activity
+			  android:name=".yxapi.YXEntryActivity"
+			  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			  android:configChanges="keyboardHidden|orientation|screenSize"
+			  android:exported="true"
+			  android:screenOrientation="portrait" />
+		<!-- ShareSDK end -->
+		
+		<!-- 百度定位 -->
+
+        <!-- <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service> -->
+		
+		 <!-- push service client -->
+        <receiver android:name="com.sshine.baidupush.client.PushMessageReceiver">
+            <intent-filter>
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+        <!-- push service client -->
+        
+         <!-- push service -->
+        <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package" />
+            </intent-filter>                   
+        </receiver>
+        
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" />
+        
+        <!-- 友盟 -->
+        <activity android:name="com.umeng.fb.ConversationActivity"/>
+        <activity android:name="com.umeng.fb.ContactActivity"/>
+        
+        <service
+		    android:name="com.umeng.common.net.DownloadingService"
+		    android:process=":DownloadingService" >
+		</service>
+		<activity 
+		    android:name="com.umeng.update.UpdateDialogActivity"
+		    android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+		</activity>
+        <meta-data android:value="52f1a5b856240ba0713be0b7" android:name="UMENG_APPKEY"></meta-data>
+		 <meta-data android:value="umeng_auto" android:name="UMENG_CHANNEL"/>
+    </application>
+</manifest>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/sl_transparent_light_orange_1"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/item_passenger_mang_btnName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:focusable="false"
+        android:background="@drawable/sl_transparent_light_orange_1"
+        android:layout_weight="3" />
+    <TextView
+        android:id="@+id/item_passenger_mang_tvTypeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="2"/>
+    <TextView
+        android:id="@+id/item_passenger_mang_tvStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="2"/>
+    <ImageView
+	    android:id="@+id/item_passenger_mang_ivDel"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	    android:src="@drawable/trash"
+	    android:background="@drawable/sl_transparent_light_orange_1"
+	    android:minWidth="30dp"
+	    android:minHeight="30dp"/>
+</LinearLayout>

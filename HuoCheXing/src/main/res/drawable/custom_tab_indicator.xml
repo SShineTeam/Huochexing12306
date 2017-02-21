@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Non focused states -->
+    <item android:drawable="@drawable/abs__tab_unselected_holo" android:state_focused="false" android:state_pressed="false" android:state_selected="false"/>
+    <item android:drawable="@drawable/abs__tab_selected_holo" android:state_focused="false" android:state_pressed="false" android:state_selected="true"/>
+
+    <!-- Pressed -->
+    <!-- Non focused states -->
+    <item android:drawable="@drawable/abs__tab_unselected_pressed_holo" android:state_pressed="true"/>
+
+</selector>

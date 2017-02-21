@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="huochexing_title_bg">#318ece</color>
+    <color name="orange">#ffEf4f1f</color>
+    <color name="main_bg_color">#efefef</color>
+    <color name="login_bg_color">#313039</color>
+    <color name="mainaty_color">#ffa610</color>
+    <color name="color_light_gray">#dfdfdf</color>
+    <color name="color_light_orange">#FBDD9F</color>
+    <color name="color_light_orange_1">#ff8c00</color>
+    <color name="orange_dark">#ff3300</color>
+    <color name="color_blue_1">#61cff2</color>
+    <color name="color_blue_2">#357ec2</color>
+    <color name="green_1">#4cb848</color>
+    <color name="text_orange">#ffff632d</color>
+    <color name="text_blue">#ff339ee2</color>
+    <color name="text_green">#ff007a12</color>
+    <color name="text_selector">#ffd7d7d7</color>
+    <color name="dark_blue">#5286d6</color>
+
+    <!-- custom light theme: -->
+    <color name="dialog_message_text">#333333</color>
+    <color name="dialog_title_text">#f3a71e</color>
+    <color name="dialog_title_separator">#f3a71e</color>
+    <color name="dialog_button_text">#333333</color>
+    <color name="dialog_button_normal">@android:color/transparent</color>
+    <color name="dialog_button_pressed">#99f3a71e</color>
+ <!-- 60 % opacity -->
+    <color name="dialog_button_focused">#4Cf3a71e</color>
+ <!-- 30 % opacity -->
+    <color name="dialog_button_separator">#25000000</color>
+ <!-- 7% opacity -->
+    <color name="background">#FFA500</color>
+
+    <!-- chat room need -->
+    <color name="semi_transparent">#7f000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="color_hei">#ff000000</color>
+    <color name="color_hei_8">#00000000</color>
+    <color name="color_cihei">#ff333333</color>
+    <color name="color_bai">#ffffffff</color>
+    <color name="color_bai_8">#ffffffff</color>
+    <color name="color_lan">#ff067bb1</color>
+    <color name="black">@color/color_hei</color>
+    <color name="chat_text">@color/color_cihei</color>
+    <color name="chat_time">@color/color_bai</color>
+    <color name="thirty_transparent_black">#4d000000</color>
+    <color name="semi_transparent_w">#7fffffff</color>
+
+</resources>

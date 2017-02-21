@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/rand_code_dlg_btnRefresh"
+        style="@style/ButtonBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginBottom="10dp"
+        android:text="刷新" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <com.sshine.huochexing.model.MaskView
+            android:id="@+id/rand_code_dlg_maskView"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:orientation="vertical" />
+        <include layout="@layout/footer_loading_view" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/rand_code_dlg_btnOK"
+        style="@style/ButtonBlue"
+        android:text="确定" />
+</LinearLayout>

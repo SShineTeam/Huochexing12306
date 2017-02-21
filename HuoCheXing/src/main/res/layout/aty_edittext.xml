@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+    
+    <EditText
+	    android:id="@id/pwd"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:inputType="textPassword"
+	    android:hint="您的密码"/>
+	<TextView 
+	    android:id="@id/tip"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp" />
+	<EditText
+	    android:id="@id/info"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"/>
+	    
+	<TextView 
+	    android:id="@id/errorMsg"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:textColor="#ff9900"
+	    android:visibility="gone">
+	</TextView>
+	<Button 
+	    android:id="@id/ok"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="30dp"
+	    android:textColor="@android:color/white"
+	    android:background="@drawable/btn_1_selector">
+	</Button>
+</LinearLayout>

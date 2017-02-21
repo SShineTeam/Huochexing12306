@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/zhuce_beijing"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/denglu_beijing"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@id/llyt1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/main_input"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@id/userName"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="#00ffffff"
+                android:hint="用户名"
+                android:inputType="text"
+                android:paddingLeft="10dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider_horizontal_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+	                android:id="@id/pwd"
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:layout_height="48dp"
+	                android:background="#00ffffff"
+	                android:hint="密码"
+	                android:inputType="textPassword"
+	                android:paddingLeft="10dp" />
+                <ImageView
+                    android:id="@+id/register_eye"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider_horizontal_line" />
+            <EditText
+                android:id="@id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="#00ffffff"
+                android:hint="邮箱(用于找回密码)"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+        <Button
+	        android:id="@id/ok"
+	        android:layout_width="fill_parent"
+	        android:layout_height="48dp"
+	        android:layout_below="@id/llyt1"
+	        android:layout_marginLeft="42dp"
+	        android:layout_marginRight="42dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="40dp"
+	        android:textColor="@android:color/white"
+	        android:background="@drawable/btn_1_selector"
+	        android:text="注 册" />
+    </LinearLayout>
+	
+</RelativeLayout>

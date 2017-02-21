@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/tianqi_beijing"
+    android:orientation="vertical"
+    >
+<!-- 上部分 -->
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    >
+
+
+
+
+
+
+
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+    >
+    
+       <!-- 左半部分 -->
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"  
+        android:layout_weight="1"
+        android:orientation="vertical" >  
+        
+        <!--  城市名 -->
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"  
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >  
+        
+           <TextView
+               android:id="@+id/weather_city"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:textColor="#ffffff"
+               android:textSize="30sp"
+               >    </TextView>
+             
+        </LinearLayout>
+        
+         <!--  温度 -->
+         <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent" 
+                 android:orientation="horizontal"
+                 android:layout_weight="1"
+                 > 
+                 
+            <!--  温度值 -->
+            <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="fill_parent" 
+                 android:orientation="vertical"
+                 android:gravity="center_vertical"
+                 >   
+	                 
+	              <TextView
+	               android:id="@+id/weather_curr_temp"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content" 
+	               android:textColor="#ffffff"
+	               android:textSize="60sp"
+	               >    
+	               </TextView> 
+	                  
+	        </LinearLayout>
+	       <!--  摄氏度符号 -->
+	         <LinearLayout
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="fill_parent" 
+	                 android:orientation="vertical"
+	                 android:paddingTop="10dp"
+	                 > 
+	                   <TextView
+	               android:id="@+id/weather_temp_sign"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content" 
+	               android:text="℃"
+	               android:textColor="#ffffff"
+	               android:textSize="30sp"
+	               >    </TextView> 
+	        </LinearLayout>
+           
+        </LinearLayout>
+        
+         
+         <!-- 其他信息 -->
+         
+         <LinearLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:orientation="vertical" >  
+        
+            <TextView
+               android:id="@+id/weather_wind"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:textColor="#ffffff"
+               android:textSize="14sp"
+               >    </TextView>
+             <TextView
+               android:id="@+id/weather_humidity" 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:textColor="#ffffff"
+               android:textSize="14sp"
+               >    </TextView>
+              <TextView
+               android:id="@+id/weather_update_time"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:textColor="#ffffff"
+               android:textSize="14sp"
+               >    </TextView>
+             
+        </LinearLayout>
+         
+         
+         
+    </LinearLayout>
+    
+     
+     
+     
+   <!--   右部分 -->
+     <LinearLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+    
+     
+      <!--  大图片 -->
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"  
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" > 
+
+             <ImageView
+                 android:id="@+id/weather_curr_img"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" /> 
+             
+        </LinearLayout>
+        
+         <!--  小雨 -->
+         <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"  
+                 android:orientation="horizontal"
+                 android:layout_weight="4"
+                 android:gravity="bottom"
+                 
+                 > 
+           
+              <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center_horizontal"
+                 > 
+              <TextView
+               android:id="@+id/weather_curr_weather"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:textColor="#ffffff" 
+               android:textSize="20sp"
+               >    </TextView> 
+               </LinearLayout>
+              
+              
+              
+        </LinearLayout>
+    
+         
+         
+     </LinearLayout>
+     
+     
+     
+     
+</LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+<!-- 下部分 -->
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" 
+    android:layout_weight="1" 
+    >
+    
+    <!-- 间隙 -->
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"  
+        android:orientation="vertical" >
+     </LinearLayout>
+     <!-- 未来三天天气 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tianqi_beijing1"
+        android:orientation="vertical" >
+         
+       <!--  今天  明天   后天 天气情况 -->
+        
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" 
+        android:orientation="horizontal"
+        >
+                  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" 
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        >   
+          <TextView
+               android:id="@+id/weather_date1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:text="今天"
+               android:textColor="#ffffff"
+               android:textSize="14sp"
+               >    </TextView>
+        </LinearLayout>   
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" 
+        android:orientation="vertical"
+        android:layout_weight="1"
+         android:gravity="center"
+        >    
+         <TextView
+               android:id="@+id/weather_date2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:text="明天"
+               android:textColor="#ffffff"
+               android:textSize="14sp"
+               >    </TextView>
+        </LinearLayout> 
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" 
+        android:orientation="vertical" 
+        android:layout_weight="1"
+         android:gravity="center"
+        >    
+         <TextView
+               android:id="@+id/weather_date3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:text="后天"
+               android:textColor="#ffffff"
+               android:textSize="14sp"
+               >    </TextView>
+        </LinearLayout> 
+    
+        </LinearLayout>
+        
+        <!-- 小图标 -->
+                <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp" 
+        android:orientation="horizontal" 
+        > 
+
+                  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp" 
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        >   
+         <ImageView
+                 android:id="@+id/weather_img1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"/>
+        </LinearLayout>   
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp" 
+        android:orientation="vertical"
+        android:layout_weight="1"
+         android:gravity="center"
+        >    
+        <ImageView
+                 android:id="@+id/weather_img2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+        </LinearLayout> 
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp" 
+        android:orientation="vertical" 
+        android:layout_weight="1"
+         android:gravity="center"
+        >    
+         <ImageView
+                 android:id="@+id/weather_img3"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />  
+        </LinearLayout> 
+    
+        </LinearLayout>
+        
+        <!-- 温度范围 -->
+                <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" 
+        android:orientation="horizontal"
+        >
+
+                  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" 
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        >   
+          <TextView
+               android:id="@+id/weather_temp1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:textColor="#ffffff"
+               android:textSize="14sp"
+               >    </TextView>
+        </LinearLayout>   
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" 
+        android:orientation="vertical"
+        android:layout_weight="1"
+         android:gravity="center"
+        >    
+         <TextView
+               android:id="@+id/weather_temp2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:textColor="#ffffff"
+               android:textSize="14sp"
+               >    </TextView>
+        </LinearLayout> 
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" 
+        android:orientation="vertical" 
+        android:layout_weight="1"
+         android:gravity="center"
+        >    
+         <TextView
+               android:id="@+id/weather_temp3"
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content" 
+               android:textColor="#ffffff"
+               android:textSize="14sp"
+               >    </TextView>
+        </LinearLayout> 
+    
+        </LinearLayout>
+       <!--  天气分类 -->
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" 
+        android:orientation="horizontal"
+        >
+
+                  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" 
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        >   
+          <TextView
+               android:id="@+id/weather_weather1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:textColor="#ffffff"
+               android:textSize="13sp"
+               >    </TextView>
+        </LinearLayout>   
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" 
+        android:orientation="vertical"
+        android:layout_weight="1"
+         android:gravity="center"
+        >    
+         <TextView
+               android:id="@+id/weather_weather2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:textColor="#ffffff"
+               android:textSize="13sp"
+               >    </TextView>
+        </LinearLayout> 
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" 
+        android:orientation="vertical" 
+        android:layout_weight="1" 
+         android:gravity="center"
+        >    
+         <TextView
+               android:id="@+id/weather_weather3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:textColor="#ffffff"
+               android:textSize="13sp" 
+               >    </TextView>
+        </LinearLayout> 
+    
+        </LinearLayout>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+     </LinearLayout>
+</LinearLayout>
+
+
+
+</LinearLayout>

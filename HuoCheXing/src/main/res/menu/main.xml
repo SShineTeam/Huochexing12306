@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_more"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="更多"/>
+	<item
+        android:id="@+id/menu_login"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="登录"/>
+	<item
+        android:id="@+id/menu_quit"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="退出"/>
+</menu>

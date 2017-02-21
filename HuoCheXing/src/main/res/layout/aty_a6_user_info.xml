@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/a6UserInfo_tvUserText"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="20dp"
+        android:textSize="18sp"/>
+    <Button
+		    android:id="@id/mang"
+            style="@style/ButtonBlue"
+            android:text="乘车人管理"/>
+    <Button
+		    android:id="@+id/browser"
+            style="@style/ButtonBlue"
+            android:text="我的12306"/>
+    <Button
+		    android:id="@id/a6Order"
+            style="@style/ButtonBlue"
+            android:text="12306订单"/>
+    <Button
+		    android:id="@id/loginOut"
+		    style="@style/ButtonRed"
+            android:text="退出登录" />
+    <Button
+		    android:id="@id/clear"
+		    style="@style/ButtonRed"
+            android:text="清除账号信息" />
+</LinearLayout>
+</ScrollView>

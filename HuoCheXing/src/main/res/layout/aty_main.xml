@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/zhujiemianbeijing">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+               
+                  <!-- 定位布局部分，中心 --> 
+               <LinearLayout  
+                     android:layout_width="fill_parent"   
+                     android:layout_height="wrap_content"      
+                     android:gravity="center"           
+                > 
+                 
+                   
+              <!--     包裹布局部分  --> 
+                <LinearLayout    
+                     android:layout_width="wrap_content"       
+                     android:layout_height="wrap_content"       
+                     android:orientation="horizontal"   
+                >  
+               <!-- 第一列 -->
+                <LinearLayout    
+                     android:layout_width="wrap_content"     
+                     android:layout_height="wrap_content"          
+                     android:orientation="vertical"     
+                     android:gravity="center"  
+                >
+                
+                 <LinearLayout 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"  
+                     android:orientation="vertical" 
+                     android:paddingBottom="10dp"
+                     android:paddingRight="10dp" 
+                >   
+                 <ImageButton
+                     android:id="@id/help"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/huochexing"     
+                 />
+                 </LinearLayout>
+                 
+                 
+                  <LinearLayout 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" 
+                     android:orientation="vertical"  
+                     android:paddingBottom="10dp"
+                     android:paddingRight="10dp"
+                >
+
+                      <ImageButton
+                          android:id="@id/add"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:background="@drawable/zhujiemian1_tjcc_selected" /> 
+ 
+               </LinearLayout>
+               
+                  
+                  <LinearLayout 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical" 
+                     android:paddingBottom="10dp"
+                     android:paddingRight="10dp"
+                >   
+               <ImageButton
+                     android:id="@id/chat"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" 
+                     android:background="@drawable/zhujiemian2_cylt_selected" 
+               /> 
+               </LinearLayout>
+               <LinearLayout 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"  
+                     android:paddingRight="10dp"
+                     
+                >   
+              <ImageButton
+                     android:id="@id/order"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/zhujiemian3_order_selected" 
+              />  
+              </LinearLayout>
+                    
+                </LinearLayout>
+                
+                
+                
+                
+                <!-- 第二列 -->
+                <LinearLayout 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical" 
+                     android:gravity="center" 
+                >
+                
+                 <LinearLayout 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical" 
+                     android:paddingBottom="10dp"
+                     android:paddingRight="10dp"
+                >
+
+                     <ImageButton
+                         android:id="@id/query"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="@drawable/zhujiemian4_lccx_selected" />
+
+                 </LinearLayout>
+                 
+                 
+                  <LinearLayout 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical" 
+                     android:paddingBottom="10dp"
+                     android:paddingRight="10dp"
+                >   
+                   <ImageButton 
+                     android:id="@id/wodecheci"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" 
+                     android:background="@drawable/zhujiemian5_wdcc_selected"
+               />
+               </LinearLayout>
+               
+                  
+                  <LinearLayout 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" 
+                     android:orientation="vertical"  
+                     android:paddingBottom="10dp"
+                     android:paddingRight="10dp"
+                >   
+               <ImageButton
+                     android:id="@id/antiTheft"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/zhujiemian6_aqfd_selected"
+               /> 
+               </LinearLayout>
+               <LinearLayout 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical" 
+                     android:paddingRight="10dp"
+                     
+                >
+
+                   <ImageButton
+                       android:id="@id/info"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/zhujiemian7_zxzx_selected" />
+  
+              </LinearLayout> 
+                    
+                </LinearLayout>
+                
+                <!-- 第三列 --> 
+                
+                 <LinearLayout 
+                     android:layout_width="wrap_content"  
+                     android:layout_height="wrap_content" 
+                     android:orientation="vertical" 
+                     android:paddingLeft="15dp"        
+                >  
+                 
+                     <!-- 用户 -->
+                   <LinearLayout 
+                     android:layout_width="wrap_content" 
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical" 
+                     android:paddingBottom="258dp"       
+                   >   
+                    <ImageButton
+                     android:id="@id/userInfo"
+                     android:layout_width="35dip"
+                     android:layout_height="35dip"
+                     android:background="@drawable/gerenxinxi"
+                   /> 
+                  </LinearLayout>   
+               
+               <!-- 设置 -->
+                    <LinearLayout 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" 
+                     android:orientation="vertical" 
+                     android:paddingBottom="25dp"
+                     android:layout_gravity="right|center_vertical"
+                >   
+               <ImageButton
+                     android:id="@id/setup"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/xiaobiaoti1"
+               /> 
+              </LinearLayout>
+               
+                      <LinearLayout 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical" 
+                     android:paddingBottom="25dp"
+                     android:layout_gravity="right|center_vertical"
+                >   
+               <ImageButton
+                     android:id="@id/update"
+                     android:layout_width="wrap_content" 
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/xiaobiaoti2"  
+               /> 
+               </LinearLayout>   
+               
+                       <LinearLayout 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical" 
+                     android:layout_gravity="right|center_vertical" 
+                   
+                >   
+               <ImageButton
+                     android:id="@id/quit"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/xiaobiaoti3" 
+               /> 
+               </LinearLayout>   
+     
+                </LinearLayout>
+ 
+               </LinearLayout>
+               </LinearLayout>
+                
+               </LinearLayout>
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:padding="20dp"
+    	android:orientation="vertical">
+    <Button
+            android:id="@id/quNa"
+            android:text="去哪儿订单"
+            style="@style/ButtonBlue"/>
+    <Button
+            android:id="@id/xieCheng"
+            android:text="携程订单"
+            style="@style/ButtonBlue"/>
+    <Button
+            android:id="@id/tieYou"
+            android:text="铁友订单"
+            style="@style/ButtonBlue"/>
+    <Button
+            android:id="@id/tongCheng"
+            android:text="同程订单"
+            style="@style/ButtonBlue"/>
+    
+    </LinearLayout>
+</ScrollView>

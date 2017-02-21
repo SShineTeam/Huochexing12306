@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+	<TextView
+	    android:id="@+id/download_tvTitle"
+	    	android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="有新的版本更新"
+            android:textSize="22sp"
+            android:textColor="@color/dialog_title_text" />
+	<TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/dialog_title_separator" />
+	<RelativeLayout
+	     android:layout_margin="10dip"
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+         android:layout_gravity="center">
+	     <ProgressBar
+            android:id="@+id/download_pb"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/pb_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+	     <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/download_tvTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="准备下载..."
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+	</RelativeLayout>
+	<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/dialog_button_separator" />
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/download_btnOK"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:text="点击下载"
+            android:textColor="@color/dialog_button_text"
+		    android:background="@drawable/dialog_message_button"
+            android:layout_marginTop="10dip" />
+</LinearLayout>
