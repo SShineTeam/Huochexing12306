@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+	    android:id="@id/content"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:inputType="textCapCharacters"
+	    android:hint="请输入名称或字母" />
+        <Button
+	            android:id="@id/voice"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:background="@drawable/btn_voice_selector"/>
+    </LinearLayout>
+	<Button
+	    android:id="@id/result"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/sl_transparent_light_orange_1"
+	    android:textColor="#2900ff"
+	    android:visibility="gone"
+	    android:gravity="left"
+	    android:padding="10dp" />
+	<LinearLayout
+	    android:id="@id/llyt1"
+	    android:layout_width="fill_parent"
+	    android:padding="10dp"
+	    android:layout_height="48dp"
+	    android:gravity="center"
+	    android:background="@drawable/sl_userinfo_llyt"
+	    android:orientation="horizontal">
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/trash"/>
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="清空历史记录" />
+	</LinearLayout>
+	<GridView
+	    android:id="@id/gv1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:padding="10dp"
+	    android:listSelector="@drawable/sl_transparent_light_orange_1"
+	    android:horizontalSpacing="10dp"
+	    android:verticalSpacing="10dp"
+	    android:numColumns="auto_fit"
+	    android:columnWidth="70dp" />
+</LinearLayout>

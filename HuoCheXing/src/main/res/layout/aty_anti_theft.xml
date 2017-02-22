@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/main_input"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@id/bt1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/sl_main_btn_transparent_gray"
+                    android:padding="10dp"
+                    android:text="蓝牙行李防盗" />
+
+                <ImageView
+                    android:id="@id/bt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/chat_off" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@id/earphone1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                   android:padding="10dp"
+                    android:background="@drawable/sl_main_btn_transparent_gray"
+                    android:text="耳机被拨出报警" />
+
+                <ImageView
+                    android:id="@id/earphone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/chat_off" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@id/charge1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="10dp"
+                    android:background="@drawable/sl_main_btn_transparent_gray"
+                    android:text="充电状态被打断报警" />
+
+                <ImageView
+                    android:id="@id/charge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/chat_off" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@id/pocket1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="10dp"
+                    android:background="@drawable/sl_main_btn_transparent_gray"
+                    android:text="从口袋中被取出报警" />
+
+                <ImageView
+                    android:id="@id/pocket"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/chat_off" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@id/rest1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="10dp"
+                    android:background="@drawable/sl_main_btn_transparent_gray"
+                    android:text="静置状态被打断报警" />
+
+                <ImageView
+                    android:id="@id/rest"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/chat_off" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textColor="#4cb848"
+            android:textSize="24sp" />
+        <Button
+            android:id="@id/stopAlarm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_1_selector"
+            android:layout_margin="20dp"
+            android:visibility="gone"
+            android:text="关闭警报" />
+        <LinearLayout
+            android:id="@+id/antiTheft_llytBT"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+			<TextView
+	                android:id="@+id/antiTheft_tvBTDevicesTitle"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textStyle="bold"
+	                android:text="已连接设备列表:" />
+            <ListView
+                android:id="@+id/antiTheft_lvBTDevices"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

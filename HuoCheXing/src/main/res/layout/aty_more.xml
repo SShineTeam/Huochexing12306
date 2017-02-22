@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/more_sv1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:text="测试" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_weight="3"
+                android:text="本" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_input"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="输入验证码后自动提交" />
+
+                <ImageView
+                    android:id="@id/autoSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主界面" />
+
+                <Button
+                    android:id="@id/defaultAty"
+                    style="?android:attr/spinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@id/reminder"
+            style="@style/ButtonBlue"
+            android:text="到站提醒设置" />
+
+        <Button
+            android:id="@id/antiTheft"
+            style="@style/ButtonBlue"
+            android:text="安全防盗设置" />
+
+        <Button
+            android:id="@id/chat"
+            style="@style/ButtonBlue"
+            android:text="聊天设置" />
+
+        <Button
+            android:id="@id/lockPattern"
+            style="@style/ButtonBlue"
+            android:text="设置解锁图案" />
+
+        <Button
+            android:id="@id/feedback"
+            style="@style/ButtonBlue"
+            android:text="帮助与反馈" />
+
+        <Button
+            android:id="@id/share"
+            style="@style/ButtonBlue"
+            android:text="分享给好友" />
+
+        <Button
+            android:id="@id/grade"
+            style="@style/ButtonBlue"
+            android:text="给个好评" />
+
+        <Button
+            android:id="@id/about"
+            style="@style/ButtonBlue"
+            android:text="关于我们" />
+    </LinearLayout>
+
+</ScrollView>

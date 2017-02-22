@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/about_llyt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/about_memberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="30dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kaifazhe" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center"
+            android:orientation="vertical"
+            android:paddingTop="70dp" >
+
+            <ImageView
+                android:id="@+id/about_teamLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kaifa_tubiao" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="3dp" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.01dip"
+                android:background="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="30dp" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:text="开发团队：SShine"/>
+            <TextView
+                android:id="@id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center">
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="QQ交流群:"
+	                android:textSize="15sp"/>
+	            <Button
+	                android:id="@+id/about_btnQQ"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/sl_main_btn_transparent_gray"
+	                android:textColor="#000000"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+	                android:textSize="15sp" />
+	        </LinearLayout>
+            <Button
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/sl_main_btn_transparent_gray"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/about_llytSinaWeiBo"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/sl_main_btn_transparent_gray"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/sina_weibo" />
+
+                <TextView
+                    android:id="@+id/about_sinaWeiBo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

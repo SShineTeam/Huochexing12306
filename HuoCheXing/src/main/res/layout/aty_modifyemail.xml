@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <LinearLayout
+        android:id="@+id/llyt1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:orientation="vertical" >
+        
+		<EditText
+                android:id="@id/verifyWay"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:hint="新邮箱地址"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp" />
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@id/ok"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llyt1"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_1_selector"
+        android:text="下一步" />
+    
+</RelativeLayout>

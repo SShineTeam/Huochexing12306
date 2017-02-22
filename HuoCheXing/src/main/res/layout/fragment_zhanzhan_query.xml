@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <TableRow android:paddingLeft="10dp" >
+                <Button
+                    android:id="@+id/zhanzhanQuery_btnQueryType"
+                    style="?android:attr/spinnerStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/zhanzhanQuery_btnTicketType"
+                    style="?android:attr/spinnerStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/zhanzhanQuery_tvFromStationTip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/sl_main_btn_transparent_gray"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="出发站:" />
+
+                    <TextView
+                        android:id="@+id/zhanzhanQuery_tvToStationTip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/sl_main_btn_transparent_gray"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="目的站:" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/zhanzhanQuery_btnStartStation"
+                            style="?android:attr/spinnerStyle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/zhanzhanQuery_btnEndStation"
+                            style="?android:attr/spinnerStyle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/zhanzhanQuery_ivSwap"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:scaleType="center"
+                        android:src="@drawable/change_station" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="出发日:" >
+                </TextView>
+
+                <Button
+                    android:id="@+id/zhanzhanQuery_btnDepartureDate"
+                    style="?android:attr/spinnerStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/zhanzhanQuery_trReturnDate"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="返程日:" >
+                </TextView>
+
+                <Button
+                    android:id="@+id/zhanzhanQuery_btnReturnDate"
+                    style="?android:attr/spinnerStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="发车时间:" >
+                </TextView>
+
+                <Button
+                    android:id="@+id/zhanzhanQuery_btnFromTimeRange"
+                    style="?android:attr/spinnerStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="到达时间:" >
+                </TextView>
+
+                <Button
+                    android:id="@+id/zhanzhanQuery_btnToTimeRange"
+                    style="?android:attr/spinnerStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="车次类型:" >
+                </TextView>
+
+                <Button
+                    android:id="@+id/zhanzhanQuery_btnTrainType"
+                    style="?android:attr/spinnerStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/zhanzhanQuery_btnQuery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_1_selector"
+            android:text="查    询"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+</ScrollView>

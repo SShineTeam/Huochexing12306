@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="15dp"
+        android:text="提示"
+        android:textColor="@color/dialog_title_text"
+        android:textSize="22sp" />
+		<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/dialog_title_separator" />
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/dialog_message_text"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/etRandCode"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:hint="验证码"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/ivRandCode"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:minWidth="96dp"
+            android:src="@drawable/refesh" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dip"
+        android:background="@color/dialog_button_separator" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnPositive"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_message_button"
+            android:textColor="@color/dialog_button_text" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@color/dialog_button_separator" />
+
+        <Button
+            android:id="@+id/btnNagative"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_message_button"
+            android:textColor="@color/dialog_button_text" />
+    </LinearLayout>
+
+</LinearLayout>

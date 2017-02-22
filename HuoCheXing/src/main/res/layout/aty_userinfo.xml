@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/user_info_bg1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="30dip"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:layout_marginLeft="30dip" >
+
+                <ImageView
+                    android:id="@id/icon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/head000" />
+
+                <TextView
+                    android:id="@id/iconResId"
+                    android:textColor="#000000"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@id/llytNickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/sl_main_btn_transparent_green"
+                android:clickable="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@id/nickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dip"
+                    android:text="火车行用户"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--基本资料 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_gravity="bottom"
+            android:background="#22000000"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:text="基本资料 "
+                android:textSize="15sp"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical" >
+		<LinearLayout
+		    android:id="@+id/userinfo_llytUserName"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:background="@drawable/sl_userinfo_llyt"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:text="账号:"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/userinfo_tvUserName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@id/llytSex"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:background="@drawable/sl_userinfo_llyt"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:text="性别:"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@id/sex"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@id/llytEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dip"
+            android:clickable="true"
+            android:background="@drawable/sl_userinfo_llyt"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:text="邮箱:"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                 />
+        </LinearLayout>
+		<Button
+		    android:id="@id/modify"
+                style="@style/ButtonBlue"
+                android:text="修改密码"/>
+        <Button
+		    android:id="@+id/userinfo_btnAuthPage"
+                style="@style/ButtonBlue"
+                android:visibility="gone"
+                android:text="第三方平台设置"/>
+		<Button
+		    android:id="@id/hisFootPrint"
+            style="@style/ButtonBlue"
+            android:visibility="gone"
+            android:text="历史足迹"/>
+		<Button
+		    android:id="@id/user"
+                style="@style/ButtonBlue"
+                android:text="查看12306账户"/>
+		<Button
+		    android:id="@id/clear"
+                style="@style/ButtonRed"
+                android:text="清除12306账户信息"/>
+		<Button
+		    android:id="@id/change"
+                style="@style/ButtonRed"
+                android:text="更换火车行账户"/>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

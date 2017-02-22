@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trainInfo_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <com.sshine.huochexing.model.PullToRefreshView
+    android:id="@+id/trainInfo_pull_refresh_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="gone"
+    android:orientation="vertical" >
+    <!--
+    这里放置listview,gridview或者scrollview的布局 ,PullToRefreshView
+	要设置android:orientation="vertical"属性
+	否则,显示不正确
+    -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:orientation="vertical" >
+            
+            
+            <!-- 第1部分 -->
+            
+             <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E4E4E4"
+                    android:orientation="vertical"
+                    >
+                         <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="#ADACAC"   
+                    android:gravity="right"
+                    android:paddingTop="5dp">
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="车次信息  "
+                                 android:textColor="#000000" 
+                                 android:textSize="18sp" 
+                                 />
+                         </LinearLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" 
+                android:layout_marginTop="20dp"
+                android:stretchColumns="1" >
+
+                <TableRow android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:textSize="16sp"
+                        android:text="车次:" />
+
+                    <Button
+                        android:id="@+id/trainInfo_btnTrainNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:background="@drawable/btn_1_selector"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginRight="20dp"
+                        android:text="出发地:" />
+
+                    <TextView
+                        android:id="@+id/trainInfo_tvStartStation"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow 
+                    android:layout_marginBottom="10dp" 
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginRight="20dp"
+                        android:text="目的地:" />
+                     <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"  
+                        android:gravity="center_vertical"
+                        >
+                             <LinearLayout
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_weight="1"
+                                 
+                                 >
+                    <TextView
+                        android:id="@+id/trainInfo_tvEndStation" 
+                        android:textSize="16sp"
+           				android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            
+                             <LinearLayout
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="wrap_content" 
+                                 android:layout_weight="1"
+                                 android:gravity="right"
+                                 >
+                       <Button
+                            android:id="@+id/trainInfo_btnWeather"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" 
+                            android:background="@drawable/btn_weather_selector"
+                            android:textColor="@android:color/white" /> 
+                    </LinearLayout>
+         
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="总耗时:" />
+
+                    <TextView
+                        android:id="@+id/trainInfo_tvR_Date"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                </TableLayout>
+                
+            </LinearLayout>
+            <!-- 第2部分 -->
+             <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:orientation="vertical"
+                    >
+             <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E4E4E4"
+                    android:paddingBottom="6dp" 
+                    android:orientation="vertical"
+                    >
+                         <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="#ADACAC"  
+                    android:gravity="right"
+                    android:paddingTop="5dp"
+                    >
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="实时信息  "
+                                 android:textColor="#000000" 
+                                 android:textSize="18sp" 
+                                 />
+                         </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:textSize="16sp"
+                        android:text="列车状态:" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal">
+                          
+                        <TextView
+                            android:id="@+id/trainInfo_tvTrainStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp" />
+                         <Button
+                            android:id="@+id/trainInfo_btnLocation"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="0dp"
+                            android:visibility="gone"
+                            android:background="@drawable/btn_location_selector"/>
+                    </LinearLayout>  
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:id="@+id/trainInfo_tvTimeTip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_weight="3"/>
+
+                <TextView
+                    android:id="@+id/trainInfo_tvTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/trainInfo_tlytArea2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:stretchColumns="1" >
+
+                <TableRow android:layout_marginBottom="10dp" >
+                    <TextView
+                        android:id="@+id/trainInfo_tvStationSpaceTip" 
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_weight="3" />
+                    <TextView
+                        android:id="@+id/trainInfo_tvStationSpace"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_weight="5" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/trainInfo_tvLateTimeTip"
+                        android:layout_width="0dp"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3" />
+
+                    <TextView
+                        android:id="@+id/trainInfo_tvLateTime"
+                        android:layout_width="0dp"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/trainInfo_tvPredictTimeTip"
+                        android:layout_width="0dp"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3" />
+
+                    <TextView
+                        android:id="@+id/trainInfo_tvPredictTime"
+                        android:layout_width="0dp"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/trainInfo_tvRemainingTimeTip"
+                        android:layout_width="0dp"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3" />
+
+                    <TextView
+                        android:id="@+id/trainInfo_tvRemainingTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_weight="5" />
+                </TableRow>
+            </TableLayout>
+            </LinearLayout>
+            </LinearLayout>
+            <!-- 第3 部分 -->
+            <LinearLayout
+                android:id="@+id/trainInfo_llytArea3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+             		<LinearLayout
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="#E4E4E4"
+	                    android:orientation="vertical">
+                         <LinearLayout
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="30dp"
+		                    android:background="#ADACAC"  
+		                    android:gravity="right"
+		                    android:paddingTop="5dp">
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="信息统计  "
+                                 android:textColor="#000000" 
+                                 android:textSize="18sp"
+                                 />
+                         </LinearLayout>
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+                <TableRow android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="·已经有" />
+
+                    <TextView
+                        android:id="@+id/trainInfo_tvUserAddTrain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="18sp"
+                        android:gravity="center_horizontal"
+                        android:textColor="#05AC38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="位用户添加了此车次" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="·当前有" />
+
+                    <TextView
+                        android:id="@+id/trainInfo_tvUserOnTrain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="18sp"
+                        android:gravity="center_horizontal"
+                        android:textColor="#05AC38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="位用户在车上" />
+                </TableRow>
+            </TableLayout>
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.sshine.huochexing.model.PullToRefreshView>
+</LinearLayout>

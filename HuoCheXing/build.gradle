@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+    defaultConfig {
+        applicationId "com.sshine.huochexing"
+        minSdkVersion 9
+        targetSdkVersion 22
+
+        ndk {
+            moduleName "secret_helper"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles 'proguard-android.txt'
+        }
+    }
+//    lintOptions {
+//        abortOnError false
+//    }
+}
+
+dependencies {
+    compile project(':ViewPager')
+    compile project(':StyledDialogs')
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile 'com.android.support:support-v4:22.0.0'
+    compile files('libs/android-sqlite-asset-helper.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/mframework.jar')
+    compile files('libs/Msc.jar')
+    compile files('libs/pushservice-3.2.0.jar')
+    compile files('libs/rhino.jar')
+    compile files('libs/ShareSDK-Core-2.3.12.jar')
+    compile files('libs/ShareSDK-GooglePlus-2.3.12.jar')
+    compile files('libs/ShareSDK-Line-2.3.12.jar')
+    compile files('libs/ShareSDK-QQ-2.3.12.jar')
+    compile files('libs/ShareSDK-QZone-2.3.12.jar')
+    compile files('libs/ShareSDK-Renren-2.3.12.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.3.12.jar')
+    compile files('libs/ShareSDK-Wechat-2.3.12.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.3.12.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.3.12.jar')
+    compile files('libs/ShareSDK-Yixin-2.3.12.jar')
+    compile files('libs/ShareSDK-Yixin-Core-2.3.12.jar')
+    compile files('libs/ShareSDK-Yixin-Moments-2.3.12.jar')
+    compile files('libs/umeng_sdk.jar')
+}

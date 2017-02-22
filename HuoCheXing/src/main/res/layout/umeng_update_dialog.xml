@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+	<ImageView
+        android:id="@+id/umeng_update_wifi_indicator"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="gone" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="15dp"
+        android:text="@string/UMUpdateTitle"
+        android:textColor="@color/dialog_title_text"
+        android:textSize="22sp" />
+<Button
+        android:id="@+id/umeng_update_id_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/dialog_title_separator" />
+
+    <TextView
+            android:id="@+id/umeng_update_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/dialog_message_text"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"/>
+	<!-- 不再提示复选框 -->
+    <CheckBox
+	        android:id="@+id/umeng_update_id_check"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"/>
+	<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dip"
+        android:background="@color/dialog_button_separator" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+	    <Button
+	        android:id="@+id/umeng_update_id_ok"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:text="立即更新"
+	        android:textColor="@color/dialog_button_text"
+	        android:background="@drawable/dialog_message_button"/>
+	    <TextView
+	        android:layout_width="1dp"
+	        android:layout_height="30dp"
+	        android:layout_gravity="center"
+	        android:background="@color/dialog_button_separator" />
+
+		<Button
+		    android:id="@+id/umeng_update_id_cancel"
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    android:text="以后再说"
+		    android:textColor="@color/dialog_button_text"
+		    android:background="@drawable/dialog_message_button"/>
+		<Button
+            android:id="@+id/umeng_update_id_ignore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

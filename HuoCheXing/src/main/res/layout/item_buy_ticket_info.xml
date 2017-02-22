@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sl_item_no_action"
+	android:padding="10dp">
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="问:"/>
+    <TextView
+        android:id="@+id/item_buy_ticket_info_tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#5a8ade"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="答:"/>
+    <TextView
+        android:id="@+id/item_buy_ticket_info_tvAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

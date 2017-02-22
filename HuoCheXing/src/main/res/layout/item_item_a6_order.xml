@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp"
+    android:stretchColumns="0" >
+    <TableRow>
+        <TextView
+            android:id="@+id/item_item_a6_order_tvTrainNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/color_blue_1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_item_a6_order_tvStation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <TextView
+            android:id="@+id/item_item_a6_order_tvTStartTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/item_item_a6_order_tvPassenger"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_item_a6_order_tvTicketTypeName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <TextView
+            android:id="@+id/item_item_a6_order_tvOrderStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/item_item_a6_order_tvSeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"/>
+        <TextView
+            android:id="@+id/item_item_a6_order_tvSeatRLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right" />
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">火车行</string>
+	<string name="findPwd"><u>找回密码</u></string>
+	<string name="requestData">请求数据&#046;&#046;&#046;</string>
+	
+	<string name="skip"><u>跳过</u></string>
+	
+	<!-- LockPatternUtils -->
+<!-- Accessibility description sent when user starts drawing a lock pattern. [CHAR LIMIT=NONE] -->
+ <string name="lockscreen_access_pattern_start">Pattern started</string> 
+<!-- Accessibility description sent when the pattern times out and is cleared. [CHAR LIMIT=NONE] -->
+ <string name="lockscreen_access_pattern_cleared">Pattern cleared</string> 
+<!-- Accessibility description sent when user adds a cell to the pattern. [CHAR LIMIT=NONE] -->
+ <string name="lockscreen_access_pattern_cell_added">Cell added</string> 
+<!-- Accessibility description sent when user completes drawing a pattern. [CHAR LIMIT=NONE] -->
+ <string name="lockscreen_access_pattern_detected">Pattern completed</string>
+ 
+	 <!-- 聊天上拉下拉 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">释放立即刷新</string>
+    <string name="xlistview_header_hint_loading">正在刷新\.\.\.</string>
+    <string name="xlistview_header_last_time">上次更新：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+    <!-- 其它上拉下拉 -->
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后更新界面</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉更新界面</string>
+    <string name="pull_to_refresh_footer_refreshing_label">更新界面中\u2026</string>
+    
+    <string name="chuangyilaiyuan">
+        	\t\t乘坐火车是我们常用的出行方式，在此过程中除了购票不便、抢票不及时
+        	等问题外，常常还会遇到列车不确定的晚点、行李物品的安全以及漫长枯
+        	燥的旅行时间等诸多问题。为了解决上述问题，我们开发了此应用。
+    </string>
+    <string name="qitagongneng">
+        其它常规功能：购票、抢票监控、查看订单、联系人、到站提醒、查看座位位置等。
+    </string>
+    
+    <!-- 应用操作提示语 -->
+    <string name="setTimezoneStr">
+        	您好，检测到您当前设备的时区与12306官方时区不符，这可能是由于您设备的时区不是设置为\"GMT+08:00 中国标准时间\“)导致的，设备时区不正确会导致为您呈现的数据出错，
+        	是否立即设置时区？
+    </string>
+    <string name="miuiNotificationRepairStr">
+        如果您使用的是MIUI系统，遇到通知提醒悬浮窗不能正常显示的情况，请点击此处，将设置页面中\"显示悬浮窗\"选项开启后,重新打开通知提醒即可.
+        \r\n温馨提示：到站提醒功能依赖于系统广播唤醒，如果要保证功能正常开启，您需要给予火车行后台自启的权限，在某些强限制手机中您可能需要将火车
+        行加入一键清理白名单中。
+    </string>
+    
+    <string name="a6_order_footerView">
+        \t\t\t\t显示座位位置信息为实验型功能，信息仅供参考，请以列车实际
+        座位位置为准。火车行暂不涉及支付订单等金融交易服务，如有不便之处请您谅解。
+    </string>
+    <string name="monitor_mang_empty_text">
+        \t\t\t\t当前没有抢票监控服务在运行，您可以到预订车票时的\"车次列表\"处添加抢票监控。
+    </string>
+    
+    <string name="canNotBookingStuTicketTip">
+        学生票的乘车时间为每年的暑假6月1日至9月30日、寒假12月1日至3月31日，12306目前不办理学生票业务。
+    </string>
+    <string name="cancelA6OrderTip">一天内3次申请车票成功后取消订单，当日将不能在12306购票，确认要取消订单吗？</string>
+    <string name="buy_half_way_ticket_tip">
+        买不到票？您可以先买中间站的票然后上车后再找列车员补票，补票通常只有站票，可能会收取5元左右不等的手续费。
+    </string>
+    <string name="monitor_mang_resume_all_paused_monitors">恢复所有已暂停监控</string>
+    
+    <string name="not_yet_authorized">尚未授权</string>
+</resources>

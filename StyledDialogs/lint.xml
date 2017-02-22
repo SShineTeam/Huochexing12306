@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="MissingTranslation" severity="ignore" />
+    <issue id="NewApi">
+        <ignore path="res/values/sdl__theme.xml" />
+    </issue>
+</lint>

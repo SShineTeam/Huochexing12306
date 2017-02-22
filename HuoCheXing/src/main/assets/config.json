@@ -1,0 +1,12 @@
+{
+client_ids:
+{
+baidu:"tOO9BsBVfnpETXjcG5SGoxHt"
+},
+client_names:
+{
+qqfriend:"火车行"
+},
+supported_medias:
+["sinaweibo","qqweibo","qqdenglu","renren","qqfriend","sms"]
+}

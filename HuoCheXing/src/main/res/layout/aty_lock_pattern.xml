@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    
+	<com.sshine.huochexing.model.LockPatternView
+         xmlns:app="http://schemas.android.com/apk/res/com.sshine.huochexing.utils"
+         android:id="@id/lpv1"
+         android:background="#393939"
+         android:layout_width="300dp"
+         android:layout_height="300dp"/>
+	<TextView
+	    android:id="@id/msg"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:padding="10dp"
+	    android:textColor="#4cb848" />
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+		<Button
+		    android:id="@id/retry"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:background="@drawable/btn_1_selector"
+		    android:textColor="@android:color/white"
+		    android:layout_margin="20dp"
+		    android:text="重试"/>
+		<Button
+		    android:id="@id/continue1"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:background="@drawable/btn_1_selector"
+		    android:textColor="@android:color/white"
+		    android:layout_margin="20dp"
+		    android:text="继续"/>
+	</LinearLayout>
+</LinearLayout>

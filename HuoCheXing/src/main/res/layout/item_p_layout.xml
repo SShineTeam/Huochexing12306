@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+	<Button
+	    android:id="@+id/item_p_layout_tvPassenger"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:background="@drawable/sl_main_btn_transparent_gray"
+	    android:layout_weight="3"/>
+	<Button
+	    android:id="@+id/item_p_layout_btnSeat"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    style="?android:attr/spinnerStyle"
+	    android:gravity="center"
+	    android:layout_weight="3"/>
+	<ImageView
+	    android:id="@+id/item_p_layout_ivDel"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	    android:src="@drawable/trash"
+	    android:background="@drawable/sl_transparent_light_orange_1"
+	    android:minWidth="30dp"
+	    android:minHeight="30dp"/>
+</LinearLayout>
